@@ -12,4 +12,5 @@ services:
     restart: always
     ports:
       - "2049:2049"
-
+    volumes:
+      - /mnt/10TBUSB:/mnt/10TBUSB:rw
