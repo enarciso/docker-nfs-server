@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  nfs-server:
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    restart: always
+    ports:
+      - "2049:2049"
+
